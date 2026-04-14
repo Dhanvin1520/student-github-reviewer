@@ -17,7 +17,7 @@ if st.button("Analyze Portfolio"):
             try:
                 # Call FastAPI backend
                 response = requests.post(
-                    f"http://127.0.0.1:8000/review",
+                    f"https://github-reviewer-api-rdxz.onrender.com/review",
                     json={"username": username}   # ✅ send as JSON (correct way)
                 )
 
